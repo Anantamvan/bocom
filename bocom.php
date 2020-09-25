@@ -4,7 +4,7 @@ echo "VERIF EMAIL MANUAL, BUKA MAILNESIA.COM\n";
 echo "?Jumlah	";
 $b = trim(fgets(STDIN));
 for($a=0;$a<$b;$a++){
-	$email = "oudurak".rand(12345678,99999999)."@mailnesia.com";
+	$email = "gweh".rand(12345678,999)."@mailnesia.com";
 	echo "[EMAIL : ".strtoupper($email)."]\n";
 	MakeAccount:
 		$asw = @file_get_contents("bt_booking_com.txt");
@@ -37,7 +37,7 @@ function getStr($a, $b, $c){
 
 function first(){
 	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, 'https://iphone-xml.booking.com/json/bookings.getCurrencyExchangeRates?device_id=44444444444444444444444444444444&affiliate_id=1&languagecode=en-us&user_version=24.1-iphone&network_type=none&base_currency=KWD&user_os=14.0');
+	curl_setopt($ch, CURLOPT_URL, 'https://iphone-xml.booking.com/json/bookings.getCurrencyExchangeRates?device_id=4123901230219172968129812&affiliate_id=1&languagecode=en-us&user_version=24.1-iphone&network_type=none&base_currency=KWD&user_os=14.0');
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 	$headers = array();
